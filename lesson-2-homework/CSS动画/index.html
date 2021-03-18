@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>To do list</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+    }
+
+    /* body */
+    body {
+      background: #e6e6e6;
+      font-family: sans-serif;
+    }
+
+    /* title */
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    /* tasks */
+    .tasks {
+      width: 350px;
+      height: 405px;
+      position: absolute;
+      top: 20%;
+      left: 0px;
+      right: 0px;
+      margin: 0px auto;
+    }
+
+    /* task */
+    .task {
+      background-color: white;
+      border-radius: 6px;
+      margin: 10px;
+      color: #3e3e3e;
+      transition: all 1s linear;
+    }
+
+
+    /* 复选框  */
+    input[type=checkbox] {
+      display: none;
+    }
+
+    label {
+      height: 69px;
+      width: 100%;
+      display: block;
+      text-transform: capitalize;
+      font-weight: 900;
+      font-size: 11px;
+      letter-spacing: 1px;
+      text-indent: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 5px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+
+    label h2 span {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    label:before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      border: solid 2px #d9d9d9;
+      display: block;
+      position: absolute;
+      border-radius: 100%;
+      right: 20px;
+      top: 30%;
+      transition: border 0.3s ease;
+    }
+
+
+    #label-1:checked~label[for=label-1] h2,
+    #label-2:checked~label[for=label-2] h2,
+    #label-3:checked~label[for=label-3] h2,
+    #label-4:checked~label[for=label-4] h2,
+    #label-5:checked~label[for=label-5] h2 {
+      text-decoration: line-through;
+      color: #635c5c;
+    }
+
+
+    #label-1:checked~label[for=label-1]:before,
+    #label-2:checked~label[for=label-2]:before,
+    #label-3:checked~label[for=label-3]:before,
+    #label-4:checked~label[for=label-4]:before,
+    #label-5:checked~label[for=label-5]:before {
+      border: solid 2px #67c23A;
+    }
+
+    .fadeaway {
+      animation: remove 1s linear;
+    }
+
+    @keyframes remove {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      50% {
+        transform: translateX(-40%);
+        opacity: 0.4;
+      }
+
+      100% {
+        transform: translateX(-80%);
+        opacity: 0;
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tasks">
+    <!-- title -->
+    <h1>Simple To-Do List</h1>
+    <!-- task 1 -->
+    <div class="task">
+      <input id='label-1' type='checkbox' />
+      <label for='label-1'>
+        <h2>Get up early
+          <span>About 6:40 </span>
+        </h2>
+      </label>
+    </div>
+    <!-- task 2 -->
+    <div class="task">
+      <input id='label-2' type='checkbox' />
+      <label for='label-2'>
+        <h2>Eat Breakfast
+          <span>soybean milk and bread</span>
+        </h2>
+      </label>
+    </div>
+    <!-- task 3 -->
+    <div class="task">
+      <input id='label-3' type='checkbox' disabled />
+      <label for='label-3'>
+        <h2>Course
+          <span>Today Course 1, 2, 3</span>
+        </h2>
+      </label>
+    </div>
+    <!-- task 4 -->
+    <div class="task">
+      <input id='label-4' type='checkbox' />
+      <label for='label-4'>
+        <h2>Code, Code, Code
+          <span>Finish project</span>
+        </h2>
+      </label>
+    </div>
+    <!-- task 5 -->
+    <div class="task">
+      <input id='label-5' type='checkbox' />
+      <label for='label-5'>
+        <h2>Go to Libray
+          <span>borrow some books</span>
+        </h2>
+      </label>
+    </div>
+  </div>
+</body>
+<script>
+
+  function onClick(evt) {
+    let task ;
+    console.log(evt.path)
+    for(node of evt.path){
+      if(node.nodeName=="DIV"){
+        node.className = "task fadeaway"
+        setTimeout(()=>{
+          node.style = "display: none"
+        }, 900)
+        break 
+      }
+    }
+  }
+  let tasks = document.querySelectorAll(".task")
+
+  for (let i = 0; i < tasks.length; i++) {
+    tasks[i].onclick = onClick
+  }
+</script>
+
+</html>
