@@ -1,0 +1,9 @@
+.carousel-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  background-position: center center;
+}

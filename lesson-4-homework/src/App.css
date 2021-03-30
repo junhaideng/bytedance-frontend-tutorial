@@ -1,0 +1,34 @@
+.carousel {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+#root {
+  padding-top:40px;
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+}
+
+.prev-button {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  opacity: 0.5;
+}
+
+.next-button {
+  font-size: large;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  opacity: 0.5;
+}
+
+.next-button:hover, .prev-button:hover{
+  opacity: 1;
+}
