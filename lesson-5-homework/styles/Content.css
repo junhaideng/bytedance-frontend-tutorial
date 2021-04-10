@@ -1,0 +1,130 @@
+section {
+     position: relative;
+    -webkit-transition: all 1s ease-in-out;
+     margin: 0px 15px;
+    border-bottom: 1px solid rgba(221, 221, 221, 0.6);
+}
+
+.has_action{
+
+}
+
+.article_link {
+    display: block;
+    position: relative;
+    padding: 12px 0px;
+    min-height: 42px;
+    font-size: 0px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    -webkit-touch-callout: none;
+}
+
+.list_image ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+h3 {
+    color: #222;
+    font-size: 17px;
+    line-height: 21px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+.dotdot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -moz-box;
+    -webkit-box-orient: vertical;
+}
+
+.line3 {
+    -webkit-line-clamp: 3;
+}
+
+.desc {
+    display: inline-block;
+    width: 67%;
+    vertical-align: middle;
+}
+
+.image-margin-right {
+    margin-right: 12px;
+}
+
+.item_info {
+    color: #999;
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 10px;
+}
+
+.stick_label {
+    display: inline-block;
+    font-size: 9px;
+    line-height: 12px;
+    width: 24px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.stick_label {
+    color: #f85959;
+    border-color: rgba(248, 89, 89, 0.5);
+}
+
+.space {
+    margin-right: 5px;
+}
+
+.item_info span {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 12px;
+    vertical-align: middle;
+}
+
+.list_img_holder {
+    position: relative;
+    background: url(https://sf1-scmcdn2-tos.pstatp.com/mobile_list/image/toutiaoicon_loading_textpage@3x_f7c130ce.png) #efefef no-repeat center center;
+    background-size: 50%;
+}
+
+.list_img_holder {
+    overflow: hidden;
+    width: 33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.list_img_holder img {
+    border: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: opacity 300ms ease;
+    -moz-transition: opacity ease .3s;
+    pointer-events: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+
+
+
