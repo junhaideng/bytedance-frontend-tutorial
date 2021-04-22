@@ -1,0 +1,50 @@
+.header {
+    display: flex;
+    flex: 0 0 250px;
+    padding: 40px;
+    background-color: #4e4e4e;
+}
+
+.music_info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    color: white;
+}
+
+.music_info div:nth-child(1) {
+    margin-bottom: auto;
+}
+
+.music_info div:nth-child(2) {
+    margin-top: 0;
+}
+
+.music_info div:nth-child(2) i {
+    font-size: 0.9em;
+    padding: 0 0.7em;
+    font-weight: 300;
+}
+
+.music_info div:nth-child(2) i:first-child{
+    padding-left: 0;
+}
+
+@media screen and (max-width: 64em) {
+    .header {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        background-color: #4e4e4e;
+    }
+
+    .header img {
+        width: 150px;
+    }
+
+    .hide {
+        display: none;
+    }
+}
