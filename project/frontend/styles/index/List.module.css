@@ -1,0 +1,84 @@
+ul.list {
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+dl.list_in {
+    margin: 0;
+    border-top: 0;
+}
+
+ul.list li {
+    margin: 0;
+    overflow: hidden;
+    font-size: inherit;
+    font-weight: 400;
+    position: relative;
+}
+
+.icon_wrapper {
+    height: 3.3rem;
+    -webkit-transform: scale(1);
+}
+
+.icon_list.page {
+    display: block;
+}
+
+.icon_list .icon {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 20%;
+    text-align: center;
+}
+
+.icon_list .icon > a {
+    padding: .2rem 0;
+}
+
+.new_icon_circle {
+    display: block;
+    margin: auto auto .14rem;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 10rem;
+    text-align: center;
+    line-height: .8rem;
+    font-size: .5rem;
+    color: #fff;
+}
+
+.icon_list .icon_desc {
+    text-align: center;
+    font-size: .24rem;
+    color: #666;
+}
+
+.icon a {
+    display: block;
+}
+
+.page.current {
+    z-index: 2;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: justify;
+}
+
+.list_ico {
+    position: absolute;
+    bottom: .22rem;
+    text-align: center;
+    width: 100%;
+}

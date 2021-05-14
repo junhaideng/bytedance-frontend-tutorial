@@ -1,0 +1,20 @@
+version: '3'
+services:
+  # 后端
+  backend:
+    container_name: backend
+    build: backend/ # 执行构建的Dockerfile
+    networks: # 指定所在网络
+      - meituan
+    ports: # 宿主机与容器端口之间的映射
+      - "8080:8080"
+  # 前端
+  frontend:
+    container_name: frontend
+    build: frontend/
+    networks:
+      - meituan
+    ports: 
+      - "3000:3000"
+networks: # 自定义一个network
+  meituan:

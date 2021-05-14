@@ -1,0 +1,40 @@
+{
+  "name": "meituan",
+  "short_name": "meituan",
+  "background_color": "#FFFFFF",
+  "description": "仿美团Web APP",
+  "display": "fullscreen",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "icons/icon-32.png",
+      "type": "image/png",
+      "size": "32x32",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-48.png",
+      "type": "image/png",
+      "size": "48x48"
+    },
+    {
+      "src": "icons/icon-64.png",
+      "type": "image/png",
+      "size": "64x64"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
+
+

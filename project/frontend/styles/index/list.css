@@ -1,0 +1,43 @@
+.meishi {
+    background: #fd9d21;
+}
+
+.dianying {
+    background: #ff6767;
+}
+
+.dianying:before {
+    font-size: .81rem;
+}
+
+.jiudian {
+    background: #8a90fa;
+}
+
+.xiuxianyule {
+    background: #fed030;
+}
+
+.waimai {
+    background: #fd9d21;
+}
+
+.ktv {
+    background: #fed030;
+}
+
+.zhoubianyou {
+    background: #4dc6ee;
+}
+
+.liren {
+    background: #ff80c2;
+}
+
+.xiaochikuaican {
+    background: #fd9d21;
+}
+
+.quanbu {
+    background: #00d3be;
+}

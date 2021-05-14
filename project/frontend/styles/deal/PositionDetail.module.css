@@ -1,0 +1,115 @@
+.detail_poi_info {
+    margin-top: .22rem;
+    background: #fff;
+}
+
+.detail_poi_info_detail {
+    padding: .22rem .24rem;
+}
+
+.detail_poi_info_detail_title {
+    font-size: .3rem;
+    color: #333;
+    line-height: .42rem;
+    margin-bottom: .1rem;
+}
+
+.detail_poi_info_detail_title_tag {
+    margin-left: 0.1rem;
+    font-size: .24rem;
+    color: #f90;
+}
+
+.detail_poi_info_detail_more {
+    color: #999;
+    line-height: .36rem;
+}
+
+.hue_base_ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block !important;
+}
+
+.detail_poi_info_detail_more .line_seg {
+    position: relative;
+}
+
+.detail_poi_info_detail_more .addr {
+    padding-left: .3rem;
+}
+
+.detail_poi_info_detail_more .distance {
+    font-size: .26rem;
+    margin-right: .2rem;
+}
+
+.detail_poi_info_detail_more .line_seg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: .05rem;
+    right: 0;
+    bottom: 0;
+    margin-left: .24rem;
+    height: 100%;
+    border-left: 1px solid #e5e5e5;
+}
+
+.detail_poi_info .detail_supplier_info {
+    padding: .22rem .24rem;
+    display: -webkit-box;
+    display: flex;
+}
+
+.detail_supplier_info_content {
+    display: block;
+    flex: 1;
+}
+
+.detail_poi_info .detail_supplier_info_content p:first-child {
+    margin-top: 0;
+}
+
+.detail_poi_info .detail_supplier_info_content p {
+    font-size: .28rem;
+    line-height: .4rem;
+    margin-top: .08rem;
+}
+
+.detail_poi_info .detail_supplier_info_content p span {
+    color: #999;
+}
+
+
+.detail_poi_info .detail_supplier_info_phone {
+    font-size: .5rem;
+    line-height: .8rem;
+    position: relative;
+    margin-left: .24rem;
+}
+
+.detail_poi_info .detail_supplier_info_phone:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -.6rem;
+    bottom: 0;
+    margin-left: .24rem;
+    height: 100%;
+    border-left: 1px solid #e5e5e5;
+}
+
+.hue_base_icon_base {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+}
+
+.detail_supplier_info_phone .hue_base_icon_base {
+    height: 0.7rem;
+    width: 0.7rem;
+}

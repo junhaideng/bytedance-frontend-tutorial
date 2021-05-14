@@ -1,0 +1,77 @@
+.feedback_list_item {
+    padding: .22rem .24rem;
+    position: relative;
+}
+
+.feedback_list_item_avatar {
+    position: absolute;
+}
+
+.feedback_list_item_avatar img {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+}
+
+.feedback_list_item_content {
+    padding-left: 1.2rem;
+    max-height: 100%;
+}
+
+.feedback_list_item_content_title {
+    margin-bottom: .22rem;
+}
+
+.feedback_list_item_content_title_name {
+    display: -webkit-box;
+    display: flex;
+    line-height: .42rem;
+    margin-bottom: .08rem;
+}
+
+.feedback_list_item_content_title_name .name {
+    font-size: .3rem;
+    color: #446889;
+}
+
+.hue_base_flex_item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.feedback_list_item_content_title_name .time {
+    font-size: .24rem;
+    color: #999;
+}
+
+.feedback_list_item_content_title_score {
+    line-height: .34rem;
+    display: flex;
+}
+
+.feedback_list_item_content_title_score .action {
+    font-size: .24rem;
+    color: #666;
+    padding-right: 0.2rem;
+}
+
+.feedback_list_item_content_des {
+    font-size: .28rem;
+    line-height: .4rem;
+}
+
+.feedback_list_item_content_photo {
+    margin-top: .22rem;
+}
+
+.feedback_list_item:after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-left: .24rem;
+    height: 1px;
+    border-bottom: 1px solid #f6f3f3;
+    margin-top: 0.1rem;
+}

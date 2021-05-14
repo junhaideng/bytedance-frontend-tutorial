@@ -1,0 +1,50 @@
+.hue_base_flex_item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.hue_base_score {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    color: #f8953d;
+}
+
+.hue_base_score_top {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hue_base_icon_base, .hue_base_icon_cate {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+}
+
+.hue_base_score i {
+    font-size: .54rem;
+    line-height: .4rem;
+}
+
+.hue_base_score_bottom {
+    display: block;
+    z-index: 0;
+    color: #999;
+}
+
+.detail_score_num_count {
+    color: #f90;
+    font-size: .3rem;
+    position: absolute;
+    white-space: nowrap;
+    top: .1rem;
+    left: 2.4rem;
+}

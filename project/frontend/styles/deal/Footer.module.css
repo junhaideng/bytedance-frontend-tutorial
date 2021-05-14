@@ -1,0 +1,58 @@
+.detail_footer {
+    height: 1.06rem;
+    line-height: 1.06rem;
+}
+
+.hue_component_bottom_fixed_button {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.hue_component_bottom_fixed_button_price {
+    padding-left: .2rem;
+}
+
+.hue_base_flex_item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding-top: 0.1rem;
+}
+
+.detail_footer .hue_component_bottom_fixed_button_price_total {
+    line-height: .66rem;
+    color: #ff5353;
+}
+
+.hue_component_bottom_fixed_button_price_total {
+    font-size: .4rem;
+    color: #06c1ae;
+}
+
+
+.detail_footer .hue_component_bottom_fixed_button_price_original {
+    line-height: .34rem;
+}
+
+.hue_component_bottom_fixed_button_price_original {
+    font-size: .26rem;
+    color: #999;
+}
+
+.hue_component_bottom_fixed_button_btn {
+    display: block;
+    width: 2.4rem;
+    height: 100%;
+    background: #f90;
+    color: #fff;
+    border: none;
+    font-size: .32rem;
+    border-radius: 0;
+}
