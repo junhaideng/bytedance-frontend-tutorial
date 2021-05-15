@@ -7,7 +7,7 @@ const prod = process.env.NODE_ENV === 'production'
 module.exports = withPWA({
     // 声明外部域名，以便next/image调用
     images: {
-        domains: ["p0.meituan.net", "p1.meituan.net"]
+        domains: ["p0.meituan.net", "p1.meituan.net", "img.meituan.net"]
     },
     pwa: {
         dest: 'public',
